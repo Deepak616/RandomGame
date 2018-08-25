@@ -14,7 +14,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse-wtp'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
-apply plugin: 'war'
+//apply plugin: 'war'
 
 group = 'com.netent'
 version = '0.0.1-SNAPSHOT'
@@ -24,13 +24,13 @@ repositories {
 	mavenCentral()
 }
 
-configurations {
+/*configurations {
 	providedRuntime
-}
+}*/
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-starter-websocket')
-	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
+	//providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

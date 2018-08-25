@@ -8,5 +8,16 @@ public class FreeRound extends Rounds {
         super();
         super.id=987654321L;
         super.roundType= RoundType.FREE;
+        super.cost=0;
+    }
+
+    @Override
+    public int calculatePercentage() {
+        return 0;
+    }
+
+    @Override
+    public RoundReward getRoundRewardForPercentage(int percentAmount) {
+        return null;
     }
 }

@@ -6,6 +6,9 @@ public abstract class Rounds {
 
     protected Long id;
     protected RoundType roundType;
+    protected int cost;
+    public abstract int calculatePercentage();
+    public abstract RoundReward getRoundRewardForPercentage(int percentAmount);
 
     public Long getId() {
         return id;

@@ -9,6 +9,14 @@ public class User {
     private int roundsWon;
     private int roundsLost;
 
+    public User(){};
+
+    public User(Long id,String username,Long totalCoins){
+        this.id=id;
+        this.username=username;
+        this.totalCoins=totalCoins;
+    }
+
     public Long getId() {
         return id;
     }
